@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hotpink;
+    margin: 0;
+    perspective: 100px;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    background: lawngreen;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card:hover {
+    transform: rotateY(30deg) rotateX(30deg) scale(2.05); 
+    box-shadow: 20px 40px 50px rgba(25, 0, 25, 0.6); 
+}
