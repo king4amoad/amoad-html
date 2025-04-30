@@ -1,0 +1,122 @@
+body {
+  background: linear-gradient(to right, #90ee6e, #7a28e5);
+  color: hsl(0, 3%, 6%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgb(248, 119, 119);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(65, 225, 164) (236, 55, 55, 0.15);
+  padding: 30px 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #e8ede8;
+  margin-bottom: 10px;
+  i {
+  margin-right: 8px;
+  color: #2f09ea;
+}
+
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #3b5921;
+  margin: 10px 0 20px;
+}
+
+/* Optional form/input styling */
+input, button, select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2314f4;
+}
+
+/* Optional dark mode class */
+.dark-mode {
+  background: #d3c1c1;
+  color: #f1f1f1;
+}
+
+.dark-mode .container {
+  background: #2c2c2c;
+  color: #f1f1f1;
+}
+/* Dark mode toggle container */
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+/* Switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider style */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px; width: 20px;
+  left: 4px; bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When toggled ON */
+.switch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px);
+}

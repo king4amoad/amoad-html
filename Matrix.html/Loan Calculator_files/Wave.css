@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(to right, #90ee6e, #7a28e5);
+  color: hsl(0, 3%, 6%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgb(248, 119, 119);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(65, 225, 164) (236, 55, 55, 0.15);
+  padding: 30px 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #e8dfdf;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #3b5921;
+  margin: 10px 0 20px;
+}
+
+/* Optional form/input styling */
+input, button, select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2314f4;
+}
+
+/* Optional dark mode class */
+.dark-mode {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-mode .container {
+  background: #2c2c2c;
+  color: #f1f1f1;
+}

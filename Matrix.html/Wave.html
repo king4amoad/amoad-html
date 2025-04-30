@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <body>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="Wave.css"
+
+  <div class="dark-mode-toggle">
+  <label class="switch">
+    <input type="checkbox" id="dark-mode-switch">
+    <span class="slider"></span>
+  </label>
+</div>
+
+
+  <div class="container">
+    <h1><i class="fas fa-calculator"></i> Loan Calculator</h1>
+
+    <div class="calculator">
+      <div class="input-group">
+        <label for="amount"><i class="fas fa-money-bill-wave"></i> Loan Amount (₦)</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+      </div>
+
+      <div class="input-group">
+        <label for="rate"><i class="fas fa-percent"></i> Interest Rate (%)</label>
+        <input type="number" id="rate" placeholder="Enter rate" />
+      </div>
+
+      <div class="input-group">
+        <label for="years"><i class="fas fa-clock"></i> Loan Term (Years)</label>
+        <input type="number" id="years" placeholder="Enter years" />
+        <input type="range" id="year-slider" min="1" max="30" value="15">
+      </div>
+
+      <button id="calculate"><i class="fas fa-play-circle"></i> Calculate</button>
+    </div>
+
+    <div class="results">
+      <div id="monthly-payment" class="result-box"><i class="fas fa-calendar-alt"></i> Monthly Payment: ₦0.00</div>
+      <div id="total-payment" class="result-box"><i class="fas fa-coins"></i> Total Payment: ₦0.00</div>
+      <div id="total-interest" class="result-box"><i class="fas fa-chart-line"></i> Total Interest: ₦0.00</div>
+    </div>
+
+    <div id="chart-container">
+      <canvas id="payment-chart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="Wave.js"></script>
+</body>
+</html>
+</head>
